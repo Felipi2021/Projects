@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: black; 
+}
+.back{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(miasto.jpg);
+    background-size: cover;
+}
+.back .content{
+max-width: 900px;
+text-align: center;
+}
+.back .content h2{
+font-size: 5em;
+color: rgb(255, 255, 255);
+}
+.back .content p{
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+.btn{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background: rgb(20, 90, 220);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.btn:hover{
+    letter-spacing: 4px;
+    transition: 0.2s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: rgb(77, 75, 75);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px black;
+}
+header .logo{
+    color: rgb(100, 100, 100);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: #111;
+}
+header .logo span{
+    color: rgb(20, 90, 220);
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    font-weight: 300;
+}
+header .navigation li a{
+    color: rgb(100, 100, 100); 
+}
+header .navigation li a:hover{
+    color: rgb(20, 90, 220);
+}
+div div img{
+    width: 100%;
+    height: 100%;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col{
+    position: relative;
+    width: 48%;
+}
+.titleText{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span{
+    color: rgb(20, 90, 220);
+    font-weight: 700;
+    font-size: 24px;
+}
+.row .col .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row .col .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.offer .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;  
+}
+.offer .content .box{
+    width: 340px;
+    margin: 50px;
+    border: 15px solid white;
+    box-shadow: 0 5px 35px black;
+}
+.offer .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;  
+}
+.offer .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.offer .content .box .text{
+    padding: 15px 0 5px;
+}
+.offer .content .box .text h3{
+    font-weight: 400;
+    color: black;
+}
+.kafle .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.kafle .content .box{
+    width: 250px;
+    margin: 15px;
+}
+.kafle .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.kafle .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.kafle .content .box .text{
+    padding: 15px 0 5px;
+}
+.kafle .content .box .text h3{
+    font-weight: 400;
+    color: black;
+}
+.deals{
+    background: url(marble.jpg);
+    background-size: cover;
+}
+.white .titleText,
+.white p{
+    color: white;
+}
+.deals .content{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: row;
+margin-top: 40px;
+}
+.deals .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: rgb(77, 75, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.deals .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.deals .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.deals .content .box .text{
+    text-align: center;
+}
+.deals .content .box .text p{
+    color: rgb(153, 146, 146);
+    font-style: initial;
+}
+.deals .content .box .text h3{
+    margin-top: 20px;
+    color: black;
+    font-size: 1em;
+    color: rgb(20, 90, 220);
+    font-weight: 600;
+}
+.contact{
+    background: url(mansion.jpg);
+    background-size: cover;
+}
+.Form{
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 0 15px 50px black;
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+#szukaj .inputBox input[type="search"]{
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: rgb(44, 44, 44);
+    color: black;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    resize: none;
+ }  
+ #szukaj .inputBox input[type="submit"]:hover{
+    background-color: rgb(19, 19, 19);
+    transition: 1s;
+    color: #4d4d4d;
+ }
+.Form h3{
+    color: black;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.Form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+.Form .inputBox input, .Form .inputBox textarea{
+    width: 100%;
+    border: 1px solid lightslategray;
+    padding: 10px;
+    color: black;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    resize: none;
+}
+.Form .inputBox input[type="submit"]{
+    font-size: 16px;
+    color: white;
+    background: rgb(20, 90, 220);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.Form .inputBox input[type="submit"]:hover{
+    font-size: 20px;
+    color: white;
+    background: rgb(20, 90, 220);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    max-width: 120px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+.copyrightText p{
+    color: grey;
+}
+.copyrightText a{
+    color: rgb(20, 90, 220);
+    font-weight: 500;
+    text-decoration: none;
+}
+@media(max-width: 991px){
+    header,
+    header.sticky
+    {
+    padding: 10px 20px; 
+    }   
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:white;
+    }
+    header .navigation li a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(X.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 20px;
+    }
+}

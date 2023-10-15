@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Agency</title>
+    <link rel="stylesheet" href="agencjaNieruchomosci.css">
+</head>
+<body>
+    <header>
+        <a href="#"class="logo">Agencja Nieruchomości</a>
+        <div class="menuToggle" onclick="toggleMenu();">
+        <ul class="navigation" onclick="toggleMenu();">
+            <li><a href="#back">Home</a></li>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#offer">Oferta</a></li>
+            <li><a href="#kafle">Kafelki</a></li>
+            <li><a href="#deals">Współprace</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><form id="szukaj" method="post" action="">
+                <div class="inputBox">
+                    <input type="search" name ="searchbar" placeholder="czego szukasz?">
+                </div>
+            </form></li>
+        </ul>
+    </header>
+    <section class="back"id="back">
+        <div class="content">
+            <h2>Kwadrat u Filipa<sup>2</sup></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus tempora quam voluptatum dolorem voluptates sint,
+             obcaecati quasi illo velit? Neque, commodi consequuntur? Eligendi quasi id culpa quaerat suscipit! Consectetur, explicabo.</p>
+             <a href="#offer" class="btn">Nasze Oferty</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col">
+                <h2 class="titleText">O Nas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque illum voluptates, repudiandae inventore provident facilis,
+                deleniti corrupti non nam corporis a odio, dolorem pariatur expedita ipsam voluptate similique reiciendis!Lorem ipsum dolor 
+                sit amet consectetur adipisicing elit. Quibusdam minima, debitis reiciendis voluptatem provident
+                quisquam soluta nesciunt quam. Ea, dicta illo? Est dolorum quo tempore repudiandae quos quam eaque exercitationem.Aperiam itaque illum voluptates, repudiandae inventore provident facilis,
+                deleniti corrupti non nam corporis a odio.</p>
+            </div>
+            <div class="col">
+                <div class="imgBx">
+                    <img src="okno.jpg" alt="widok">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offer" id="offer">
+        <div class="title">
+            <h2 class="titleText">Nasze Oferty</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="countryhouse.jpg" alt="wioska">
+                </div>
+                <div class="text">
+                    <h3>Domek We Wiosce</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="mieszkanie.jpg" alt="mieszkanie">
+                </div>
+                <div class="text">
+                    <h3>Mieszkanie w Wieżowcu</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="mansion1.jpg" alt="willa">
+                </div>
+                <div class="text">
+                    <h3>Willa</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="chatka.jpg" alt="egzotyczna chatka">
+                </div>
+                <div class="text">
+                    <h3>Egzotyczna chatka</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="miastowodne.jpg" alt="dom na wodzie">
+                </div>
+                <div class="text">
+                    <h3>Dom Na wodzie</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="igloo.jpg" alt="iglo">
+                </div>
+                <div class="text">
+                    <h3>Iglo</h3>
+                </div>
+            </div>
+            <div class="title">
+                <a href="#"class="btn">Zobacz Wszystkie</a>
+            </div>
+        </div>
+    </section>
+    <section class="kafle"id="kafle">
+        <div class="title">
+            <h2 class="titleText">Kafelki</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="marmurowe.jpg" alt="ekspert">
+                    </div>
+                    <div class="text">
+                        <h3>Marmurowe</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="panele.jpg" alt="ekspert">
+                    </div>
+                    <div class="text">
+                        <h3>Panele</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="kobalt.jpg" alt="ekspert">
+                    </div>
+                    <div class="text">
+                        <h3>Kobaltowe</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="nocnyogrod.jpg" alt="Wołodymyr Zełenski">
+                    </div>
+                    <div class="text">
+                        <h3>Nocny Ogród</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deals"id="deals">
+        <div class="title white">
+            <h2 class="titleText">Marki z nami Współpracujące</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="nike.jpg" alt="współpraca z nike">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nostrum repellat nihil illo praesentium asperiores ratione 
+                    deleniti fugiat delectus cumque maxime voluptatem commodi odit atque voluptate adipisci incidunt, sapiente optio?</p>
+                    <h3>Nike</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="mercedes.jpg" alt="współpraca z mercedes-benz">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nostrum repellat nihil illo praesentium asperiores ratione 
+                    deleniti fugiat delectus cumque maxime voluptatem commodi odit atque voluptate adipisci incidunt, sapiente optio?</p>
+                    <h3>Mercedes-Benz Daimler</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="apple.jpg" alt="współpraca z apple">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nostrum repellat nihil illo praesentium asperiores ratione 
+                    deleniti fugiat delectus cumque maxime voluptatem commodi odit atque voluptate adipisci incidunt, sapiente optio?</p>
+                    <h3>Apple</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact"id="contact">
+        <div class="title">
+            <h2 class="titleText">Kontakt</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="Form">
+            <h3>Masz pytanie? skontaktuj się z nami!</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Imię">
+            </div>
+            <div class="inputBox">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="inputBox"> 
+                <input type="text" placeholder="Miasto">
+            </div>
+            <div class="inputBox"> 
+                <input type="text" placeholder="Ulica">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Wiadomość"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Wyślij">
+            </div>
+        </div>
+    </section>
+    <div class="copyrightText">
+        <p>&copy; Copyright 2022 | Tel. xxx-xxx-xxx | email: Agencja@kwadratUfilipa.pl | <a href="https://www.google.com/maps/place/Park+Cytadela/@52.4205643,16.936182,17.07z/data=!4m15!1m8!3m7!1s0x47045b3635665f11:0xc210b0ba32f3da44!2sFredry+13,+61-714+Pozna%C5%84!3b1!8m2!3d52.4086522!4d16.9216909!16s%2Fg%2F11c5n5hhbl!3m5!1s0x47045b504332e01f:0xaa0e3d7fbb10394f!8m2!3d52.4216742!4d16.936194!16s%2Fm%2F0j9php_?entry=ttu">Siedziba</p>
+    </div>
+    <script>
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        table{
+            width: 900px;
+            height: 450px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            outline: none;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+        td{
+            text-align: center;
+        }
+        td:hover{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tbody>
+            <tr>
+                <th>Produkt</th>
+                <th>Jednostka</th>
+                <th>Dostepna ilość</th>
+                <th>Aktualizacja</th>
+                <th>Zamównienie</th>
+            </tr>
+            <tr>
+                <td id="skretka1"></td>
+                <td id="skretka2"></td>
+                <td id="skretka3"></td>
+                <td>
+                    <button id="aktualizuj1">Aktualizuj</button>
+                </td>
+                <td>
+                    <button id="order1">Zamów</button>
+                </td>
+            </tr>
+            <tr>
+                <td id="wtyki1"></td>
+                <td id="wtyki2"></td>
+                <td id="wtyki3"></td>
+                <td>
+                    <button id="aktualizuj2">Aktualizuj</button>
+                </td>
+                <td>
+                    <button id="order2">Zamów</button>
+                </td>
+            </tr>
+            <tr>
+                <td id="moduly1"></td>
+                <td id="moduly2"></td>
+                <td id="moduly3"></td>
+                <td>
+                    <button id="aktualizuj3">Aktualizuj</button>
+                </td>
+                <td>
+                    <button id="order3">Zamów</button>
+                </td>
+            </tr>
+            <tr>
+                <td id="klamka1"></td>
+                <td id="klamka2"></td>
+                <td id="klamka3"></td>
+                <td>
+                    <button id="aktualizuj4">Aktualizuj</button>
+                </td>
+                <td>
+                    <button id="order4">Zamów</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function Products(name,measure,quantity){
+            this.name = name;
+            this.measure = measure;
+            this.quantity = quantity;
+        }
+        const Skretka = new Products("Skrętka U/UTP drut","metr",29);
+        const Wtyki = new Products("Wtyki SPSC","sztuki",56);
+        const Moduly = new Products("Moduły Keystone","sztuki",14);
+        const Klamka = new Products("Klamka Ikea","sztuki",2);
+        document.getElementById("skretka1").innerHTML = Skretka.name;
+        document.getElementById("skretka2").innerHTML = Skretka.measure;
+        document.getElementById("skretka3").innerHTML = Skretka.quantity;
+
+        document.getElementById("wtyki1").innerHTML = Wtyki.name;
+        document.getElementById("wtyki2").innerHTML = Wtyki.measure;
+        document.getElementById("wtyki3").innerHTML = Wtyki.quantity;
+
+        document.getElementById("moduly1").innerHTML = Moduly.name;
+        document.getElementById("moduly2").innerHTML = Moduly.measure;
+        document.getElementById("moduly3").innerHTML = Moduly.quantity;
+
+        document.getElementById("klamka1").innerHTML = Klamka.name;
+        document.getElementById("klamka2").innerHTML = Klamka.measure;
+        document.getElementById("klamka3").innerHTML = Klamka.quantity;
+
+        document.getElementById("order1").onclick=function(){
+            let myWindow = window.open("","Zamówienie","width=500, height=500");
+            myWindow.document.write("<h2>Czy chcesz zamówić "+Skretka.name+" w ilości ["+Skretka.quantity+"] sztuk? <br><br> <button id='buton'>Zamów</button>");
+            setTimeout(function(){myWindow.close()},10000)
+        }
+        document.getElementById("order2").onclick=function(){
+            let myWindow = window.open("","Zamówienie","width=500, height=500");
+            myWindow.document.write("<h2>Czy chcesz zamówić "+Wtyki.name+" w ilości ["+Wtyki.quantity+"] sztuk? <br><br> <button>Zamów</button>");
+            setTimeout(function(){myWindow.close()},10000)
+        }
+        document.getElementById("order3").onclick=function(){
+            let myWindow = window.open("","Zamówienie","width=500, height=500");
+            myWindow.document.write("<h2>Czy chcesz zamówić "+Moduly.name+" w ilości ["+Moduly.quantity+"] sztuk? <br><br> <button>Zamów</button>");
+            setTimeout(function(){myWindow.close()},10000)
+        }
+        document.getElementById("order4").onclick=function(){
+            let myWindow = window.open("","Zamówienie","width=500, height=500");
+            myWindow.document.write("<h2>Czy chcesz zamówić "+Klamka.name+" w ilości ["+Klamka.quantity+"] sztuk? <br><br> <button>Zamów</button>");
+            setTimeout(function(){myWindow.close()},10000)
+        }
+
+
+
+
+
+
+
+        document.getElementById("aktualizuj1").onclick=function(){
+            var nowa = prompt("podaj zaktualizowaną wartość: ");
+            if(isNaN(nowa)){
+                alert("Błąd wartości")  
+            }
+            else if(nowa<0){
+                alert("wartość mniejsza od 0")
+            }
+            else if(nowa==null){
+                alert("wartość nie może być null")
+            }
+            else{
+                Skretka.quantity = nowa;
+            }
+            document.getElementById("skretka3").innerHTML = Skretka.quantity;
+        }
+        document.getElementById("aktualizuj2").onclick=function(){
+            var nowa = prompt("podaj zaktualizowaną wartość: ");
+            if(isNaN(nowa)){
+                alert("Błąd wartości")  
+            }
+            else if(nowa<0){
+                alert("wartość mniejsza od 0")
+            }
+            else if(nowa==null){
+                alert("wartość nie może być null")
+            }
+            else{
+                Wtyki.quantity = nowa;
+            }
+            document.getElementById("wtyki3").innerHTML = Wtyki.quantity;
+        }
+        document.getElementById("aktualizuj3").onclick=function(){
+            var nowa = prompt("podaj zaktualizowaną wartość: ");
+            if(isNaN(nowa)){
+                alert("Błąd wartości")  
+            }
+            else if(nowa<0){
+                alert("wartość mniejsza od 0")
+            }
+            else if(nowa==null){
+                alert("wartość nie może być null")
+            }
+            else{
+                Moduly.quantity = nowa;
+            }
+            document.getElementById("moduly3").innerHTML = Moduly.quantity;
+        }
+        document.getElementById("aktualizuj4").onclick=function(){
+            var nowa = prompt("podaj zaktualizowaną wartość: ");
+            
+            if(isNaN(nowa)){
+                alert("Błąd wartości")  
+            }
+            else if(nowa<0){
+                alert("wartość mniejsza od 0")
+            }
+            else if(nowa==null){
+                alert("wartość nie może być null")
+            }
+            else{
+                Klamka.quantity = nowa;
+            }
+            document.getElementById("klamka3").innerHTML = Klamka.quantity;     
+        }
+    </script>
+</body>
+</html>
