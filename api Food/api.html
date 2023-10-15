@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    background:var(--main);
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s linear;
+}
+header a:hover{
+    color: #000;
+    transition: all 0.4s linear;
+    font-weight: 400;
+}
+header img{
+    height: 80px;
+    width: 150px;
+}
+:root{
+    --main: #854d27;
+  --dark-main: #DD7230;
+}
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+article a{
+    text-decoration: none;
+    color: var(--main);
+    transition: all 0.4s linear;
+}
+article a:hover{
+    transition: all 0.4s linear;
+    color: var(--dark-main);
+}
+article{
+    width: auto;
+    height: 1000px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 1);
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(drewno.jpg);
+}
+footer{
+    background:var(--main);
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h4{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <p style="font-weight: 700; font-size: 40px;">LOGO</p>
+          </a>
+        <a href="#">Contact</a>
+        <a href="api.html">api</a>
+    </header>
+    <article>
+        <h2>Api used for this website: </h2>
+        <br>
+        <h3>Click<a href="https://www.themealdb.com/api.php"> here</a></h3>
+    </article>
+    <footer>
+        <h4>All rights reserved 2023 | Filip Andrzejczak &copy</h4>
+    </footer>
+</body>
+</html>

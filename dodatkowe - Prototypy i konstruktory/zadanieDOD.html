@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="zadanieDOD.css">
+</head>
+<body>
+    <header id="main">
+        <h1>Restauracja Mafioso</h1>
+    </header>
+    <div id="container1">
+        <aside id="navigation">
+            <h2>Nawigacja</h2>
+            <ol>
+                <li><a href="#main">strona głowna</a></li>
+                <li><a href="#locals">Nasze restauracje</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ol>
+        </aside>
+        <section id="menu">
+            <h2>Nasze Bestsellery</h2>
+            <div id="Food">
+                <button id="btn1">Pizza Neapolitańska</button>
+                <button id="btn2">Pizza Capriciossa</button>
+                <button id="btn3">Makaron Pesto</button>
+            </div>
+        </section>
+        <article id="locals">
+            <h2>Nasze restauracje w Pobliżu</h2>
+            <ol>
+                <li><a href="https://www.google.com/maps/place/Enea+Stadion/@52.3977074,16.857041,18z/data=!3m1!4b1!4m6!3m5!1s0x4704451d8e5a5289:0x7fa944dd86b2bf30!8m2!3d52.3977061!4d16.8580903!16zL20vMGM1X2dt?entry=ttu">Bułgarska 1</a></li>
+                <li><a href="https://www.google.com/maps/place/Enea+Stadion/@52.3977074,16.857041,18z/data=!3m1!4b1!4m6!3m5!1s0x4704451d8e5a5289:0x7fa944dd86b2bf30!8m2!3d52.3977061!4d16.8580903!16zL20vMGM1X2dt?entry=ttu">Bułgarska 2</a></li>
+                <li><a href="https://www.google.com/maps/place/Enea+Stadion/@52.3977074,16.857041,18z/data=!3m1!4b1!4m6!3m5!1s0x4704451d8e5a5289:0x7fa944dd86b2bf30!8m2!3d52.3977061!4d16.8580903!16zL20vMGM1X2dt?entry=ttu">Bułgarska 3</a></li>
+                <li><a href="https://www.google.com/maps/place/Enea+Stadion/@52.3977074,16.857041,18z/data=!3m1!4b1!4m6!3m5!1s0x4704451d8e5a5289:0x7fa944dd86b2bf30!8m2!3d52.3977061!4d16.8580903!16zL20vMGM1X2dt?entry=ttu">Bułgarska 4</a></li>               
+            </ol>
+        </article>
+    </div>
+    <footer>
+        <h3>Restauracja Mafioso &#169;2023</h3><h5>Tworzył: Filip Andrzejczak</h5>
+    </footer>
+    <script>
+        var p = document.createElement("p");
+        document.querySelector("#Food").appendChild(p);
+        function Buffet(name,price){
+            this.name = name;
+            this.price = price;
+        }
+        Buffet.prototype.Dane = function(){
+            p.innerHTML=this.name +" kosztuje "+this.price+" złotych.";
+        }
+        const Neapolitanska = new Buffet("Pizza Neapolitańska",32.99);
+        const Capriciossa = new Buffet("Pizza Capriciossa",29.99);
+        const Pesto = new Buffet("Makaron Pesto",35.00)
+        document.querySelector("#btn1").onclick=function(){
+            Neapolitanska.Dane();
+        }
+        document.querySelector("#btn2").onclick=function(){
+            Capriciossa.Dane();
+        }
+        document.querySelector("#btn3").onclick=function(){
+            Pesto.Dane();
+        }
+    </script>
+</body>
+</html>

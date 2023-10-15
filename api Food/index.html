@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="api-css.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <p style="font-weight: 700; font-size: 40px;">LOGO</p>
+      </a>
+      <a href="#">Contact</a>
+      <a href="api.html">api</a>
+    </header>
+    <article>
+      <div class="meal-container">
+        <div class="meal-search">
+          <div id="polecam">
+            <img src="adam-polecam.jpg" alt="adam poleca" />
+            <div>
+              <h3 class="title">I fully support this site! Me and my wife always find great dishes here</h3>
+              <h4 class="title">-Adam</h4>
+            </div>
+          </div>
+          <div id="szukaj">
+            <h2 class="title">Find Your meal with any ingredient!</h2>
+            <div class="meal-search-box">
+              <input
+                type="text"
+                class="search-control"
+                placeholder="input your ingredient"
+                id="search-input"
+              />
+              <button class="search-btn btn" id="search-btn">
+                <h5>Search</h5>
+              </button>
+            </div>
+            <div>
+              <h2 class="title">Random dish</h2>
+              <button class="search-btn btn" id="random-btn">
+                <h5>Randomize</h5>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="meal-result">
+          <h2 class="title">Meals with your ingredient:</h2>
+          <div id="meal">
+            <!--tutaj siedzą dania-->
+          </div>
+        </div>
+
+        <div class="meal-details">
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <h5>Close</h5>
+          </button>
+
+          <div class="meal-details-content">
+            <!--tutaj siedzą receptury jak przygotować-->
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <h4>
+        All rights reserved 2023 | Filip Andrzejczak &copy
+      </h4>
+    </footer>
+    <script src="api-js.js"></script>
+  </body>
+</html>
